@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: TTLakes;
+}
+
+body {
+  max-width: 320px;
+  margin-bottom: auto;
+  font-weight: medium;
+}
+
+a:-webkit-any-link {
+  color: #1b1c21;
+}
+
+a:-webkit-any-link:hover {
+  color: #7e7e82;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: TTLakes;
+  src: url(./TTLakes/TTLakes-Medium.ttf);
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: TTLakes;
+  src: url(./TTLakes/TTLakes-Bold.ttf);
+  font-weight: bold;
+}
+
+.box {
+  min-height: 800px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+}
+
+.header_menu {
+  padding: 18px 24px 30px 24px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.menu_item__logo {
+  padding-right: 120px;
+}
+
+.header_button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 50%;
+}
+
+.box-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: auto;
+}
+
+.nav {
+  position: relative;
+  display: inline-block;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.nav_item {
+  position: relative;
+  padding: 16px 0px 16px 24px;
+  font-size: 16px;
+}
+
+.nav_item__content:focus::before {
+  color: #7e7e82;
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  background-color: #41F6D7;
+  top: 10px;
+  left: 0px;
+  display: block;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.nav_item__content:focus {
+  color: #7e7e82;
+}
+
+.icon {
+  display: flex;
+  padding-left: 24px;
+  padding-bottom: 16px;
+}
+
+.icon_item {
+  padding-right: 16px;
+}
+
+.icon_item__contact {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 50%;
+}
+
+.email_telephone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 68px;
+  padding-top: 16px;
+  padding-left: 24px;
+}
+
+.email {
+  padding-bottom: 12px;
+  font-size: 16px;
+}
+
+.telephone {
+  padding-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.language {
+  display: flex;
+  padding-left: 24px;
+  font-size: 16px;
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+
+.language__link {
+  padding-right: 7px;
+}
+
+.language__link:focus {
+  color: #7e7e82;
+}
